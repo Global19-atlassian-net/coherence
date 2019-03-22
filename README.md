@@ -23,8 +23,8 @@ Coherence is cryptoserver, operating at layer 4, implemented as TCP non-blocking
 
 ## This branch
 
-In this branch  we are integrating postquatum algorithms and homomorphic encryption, pairing based cryptography , as well as new 
-features. In master branch we include Qtesla as previous feature from this branch.
+In this branch  aims to integrate postquatum algorithms and homomorphic encryption, pairing based cryptography , as well as new 
+features. In master branch we include qTesla as previous feature from this branch.
  
 ## Standard Features
 

@@ -1,5 +1,5 @@
 #!/bin/bash
 
 python ntru.py  
-python qtesla.py  
+python oqs_sign.py  
 

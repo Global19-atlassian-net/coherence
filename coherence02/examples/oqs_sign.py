@@ -50,9 +50,11 @@ def oqs_sig (algorithm, params):
         answ2=json.loads(data_js_n)
         print "Recived: \n" + data_js_n +"\n"
 
-oqs_alg=["QTESLA","DILITHIUM"]
+oqs_alg=["QTESLA","DILITHIUM","PICNIC"]
 qtesla_param=["qteslai","qteslaiiisize","qteslaiiispeed"]
 dilithium_param=["dilithiumiimedium","dilithiumiiirecommended","dilithiumivveryhigh"]
+picnic_param=["picnicl1fs","picnicl1ur","picnicl3fs","picnicl3ur","picnicl5fs","picnicl5ur"]
 
 oqs_sig(oqs_alg[0],qtesla_param)
 oqs_sig(oqs_alg[1],dilithium_param)
+#oqs_sig(oqs_alg[2],picnic_param)

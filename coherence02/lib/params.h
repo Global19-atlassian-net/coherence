@@ -5,6 +5,11 @@
 #define _qtesla
 #define _dilithium
 //#define _picnic
+//#define _bigquake
+#define _kyber
+#define _newhope
+#define _saber
+#define _sike
 
 
 using namespace  std;
@@ -55,6 +60,7 @@ typedef struct params{
   string pubkey;
   string privkey;
   string sharedkey;
+  string sharedtext;
   string sharedpub;
   string hash_sign;
   //DH

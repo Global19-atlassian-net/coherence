@@ -12,7 +12,8 @@
 #include "crypt-ntru.h"
 
 extern "C" {
-#include "crypt-oqs.h"
+#include "crypt-oqs-sign.h"
+#include "crypt-oqs-kem.h"
 }
 
 #include <stdio.h>
@@ -88,13 +89,42 @@ int PARSING(string& str_json, string& answ_js ){
   }
   #endif
 
-/*
+
   #ifdef _picnic
   else if(strncmp(req_val.algorithm.c_str(), "PICNIC",sizeof("PICNIC")) == 0){
     parse_oqs_sign(d,req_val,answ_js);
   }
   #endif
-*/
+
+  #ifdef _bigquake
+  else if(strncmp(req_val.algorithm.c_str(), "BIGQUAKE",sizeof("BIGQUAKE")) == 0){
+    parse_oqs_kem(d,req_val,answ_js);
+  }
+  #endif
+
+  #ifdef _kyber
+  else if(strncmp(req_val.algorithm.c_str(), "KYBER",sizeof("KYBER")) == 0){
+    parse_oqs_kem(d,req_val,answ_js);
+  }
+  #endif
+
+  #ifdef _newhope
+  else if(strncmp(req_val.algorithm.c_str(), "NEWHOPE",sizeof("NEWHOPE")) == 0){
+    parse_oqs_kem(d,req_val,answ_js);
+  }
+  #endif
+
+  #ifdef _saber
+  else if(strncmp(req_val.algorithm.c_str(), "SABER",sizeof("SABER")) == 0){
+    parse_oqs_kem(d,req_val,answ_js);
+  }
+  #endif
+
+  #ifdef _sike
+  else if(strncmp(req_val.algorithm.c_str(), "SIKE",sizeof("SIKE")) == 0){
+    parse_oqs_kem(d,req_val,answ_js);
+  }
+  #endif
 
   else{
     req_val.error="Bad algorithm";

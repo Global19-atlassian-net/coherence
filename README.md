@@ -27,23 +27,10 @@ Coherence presents a new alternative to perform and offload cryptography operati
 
 In this branch  aims to integrate postquatum algorithms and homomorphic encryption, pairing based cryptography , as well as new 
 features. In master branch we include qTesla as previous feature from this branch.
- 
-## Standard Features
-
-* Hash functions: SHA3, SHA2, SHA1, WHIRLPOOL, Blake2b.
-* Password-hashing function: Argon2
-* Stream ciphers: Sosemanuk, Salsa20/20.
-* Block ciphers: AES, RC6, MARS, Twofish, Serpent, CAST-256, Camellia, SPECK, SIMECK.
-* Block ciphers modes: CTR, GCM.
-* Message authentication codes: HMAC(SHA3, SHA2, SHA1, WHIRLPOOL),  CMAC(AES, RC6, MARS, Twofish, Serpent, CAST-256, Camellia), VMAC(AES, RC6, MARS, Twofish, Serpent, CAST-256, Camellia), Poly1305.
-* RSA: Key generation, digital signature, encryption.
-* DSA: Key generation, digital signature.
-* DH: Key generation, key exchange (rfc and custom parameters).
-* ECC: Key generation, ECIES, ECDSA, ECDH.
-* Post-Quantum Cryptography: NTRU.
 
 ## Experimental Features
 
+* NTRU
 * Qtesla
 * Dilithium
 
@@ -97,8 +84,7 @@ We are getting SHA3-512 for "Hello world!" string.
 _You can use your favorite language, we are using python only for illustrative examples( your language needs to support TCP sockets
 and json format)._
 
-argon2.py  block.py  cmac.py  dh.py  dsa.py  ecc.py  hash.py  hmac.py  ntru.py  poly1305.py  qtesla.py  rand.py  rsa.py  stream.py  
-vmac.py
+ ntru.py  qtesla.py  
 
 The code is very simple and with basic programming knowledge you should be able to understand it. You only need to understand python 
 tcp sockets and json format.

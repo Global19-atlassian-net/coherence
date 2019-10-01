@@ -1,4 +1,4 @@
-# Welcome to (Cryptoserver)
+# Welcome to (Cryptoserver) - (DEPRECATED)
 <pre>
  _______  _____  _     _ _______  ______ _______ __   _ _______ _______
  |       |     | |_____| |______ |_____/ |______ | \  | |       |______
